@@ -116,6 +116,9 @@ app.get("/health", function(req, res) {
 });
 
 // Start Express.js server
+// http.listen(process.env.PORT || 3000, function(){
+//   console.log('listening on', http.address().port);
+// });
 var server = app.listen(app.get("port"), app.get("host"), function() {
     console.log("Express server listening on port " + server.address().port + " on " + server.address().address);
 });
